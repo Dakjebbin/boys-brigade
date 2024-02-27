@@ -443,6 +443,17 @@ background-color: rgb(2, 2, 22);
       
     }
 
+      
+
+      .right-section{
+        display: flex;
+        align-items: center;
+        width: 150px;
+        margin-left: 20px;
+        justify-content: space-between;
+        margin-right: 10px;
+      }
+
 
     .search-bar{
       width: 100%;
