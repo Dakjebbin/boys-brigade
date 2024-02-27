@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+     box-sizing: border-box;
+    background-color: rgb(2, 2, 22);
+   
+    color: white;
+   
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 85px;
+    left: 0;
+  
+    width: 100%;
+    height: 70.2%;
+    background-image: url(images/edit.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+
+.mobile-grid-container{
+    display: none;
+}
+
+.logo{
+    width: 55px;
+    padding-left: 30px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding-top: 10px;
+background-color: rgb(2, 2, 22);
+
+}
+
+.links ul{
+    margin-left: 70px;
+}
+
+.links ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+  }
+  .links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+  }
+
+.container{
+
+color: black;
+padding: 20px 20px;
+display: flex;
+justify-content: space-between;
+}
+
+.flex-1 p{
+    margin: 10px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.flex-1 img{
+    width: 300px;
+   margin-left: 50px;
+    border-radius:50px;
+}
+
+.flex-1,
+.flex-2,
+.flex-3{
+background-color: rgb(98, 89, 89);
+width: 33%;
+border-radius: 10px;
+}
+
+
+  .menu-button{
+    fill: white;
+    display: none;
+    margin-right: 20px;
+  }
+
+ .main{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    align-items: center;
+    
+   
+ }
+
+ .main-logo{
+    width: 400px;
+    
+    
+ }
+
+     
+.head{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 16px;
+font-weight: lighter;
+margin-left: 15px;
+
+}
+
+.christain{
+font-size: 41px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: rgb(227, 225, 225);
+font-weight: bold;
+margin-top: 18px;
+margin-left: 15px;
+margin-bottom: 18px;
+}
+
+.history{
+   
+margin-left: 15px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: lighter;
+color: rgb(146, 144, 144);
+
+}
+
+.mobile{
+background-color: gray;
+position: fixed;
+
+right: 0;
+top: 0px;
+height: 100vh;
+width: 300px;
+display: none;
+flex-direction: column;
+opacity: 0.99;
+ background-color:  rgb(2, 2, 22);
+ z-index: 100;
+}
+
+
+
+.mobile ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    height: 250px;
+    justify-content: space-between;
+}
+
+.mobile ul li{
+    list-style: none;
+}
+
+.mobile li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+}
+
+.show-on-mobile{
+    display: none;
+}
+
+.book{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    background: #ffb44b;
+    margin-right: 80px;
+  }
+
+  .bok{
+    background-color: #cb8d39;
+    margin-left: 40px;
+    margin-top: 10px;
+    text-decoration: none;
+    width: 80px;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  .close-button{
+    fill: white;
+    margin-left: 50%;
+    margin-top: 30px;
+    background-color: #cb8d39;
+    padding: 10px;
+    border-radius: 25px;
+    
+  }
+
+
+  @media only screen and (min-width: 650px) and (max-width: 950px){
+    .menu-button{
+        display: block;
+    }
+
+    .hide-on-mobile{
+        display: none;
+    }
+
+    
+
+    .mobile-grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+        
+    }
+
+    .mobile-picture{
+     width: 450px;
+        
+    }
+
+    .text-mobile{
+        text-align: center;
+    }
+
+
+body::before{
+    display: none;
+}
+
+
+
+    .show-on-mobile{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .center-logo{
+        margin-left: 45%;
+    }
+    
+    .mobile-logo{
+        width:120px;
+        
+    }
+
+
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    padding-top: 10px;
+     background-color: rgb(0, 0, 39);
+    }
+
+    
+ .main{
+    display: none;
+    
+   
+ }
+
+ .main-logo{
+    display: none;
+ }
+    
+    
+}
+
+
+
+  @media only screen and (min-width: 280px) and (max-width: 649px){
+    .menu-button{
+        display: block;
+        
+        
+    }
+
+     .links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    padding-top: 10px;
+     background-color: rgb(0, 0, 39);
+    }
+
+    .center-logo{
+        margin-left: 35%;
+    }
+    
+    .mobile-logo{
+        width:120px;
+        
+    }
+
+    .hide-on-mobile{
+        display: none;
+    }
+
+
+    .show-on-mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    
+ .main{
+    display: none;
+    
+   
+ }
+
+ .main-logo{
+    display: none;
+ }
+
+
+ body::before{
+ display: none;   
+}
+
+.links ul{
+    margin-left: 0px;
+}
+
+ 
+ .mobile-grid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+    
+}
+
+.mobile-picture{
+ width: 450px;
+    
+}
+
+.text-mobile{
+    text-align: center;
+}
+
+  }
